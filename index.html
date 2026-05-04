@@ -1,34 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sorting Visualizer</title>
-    <link rel="stylesheet" href="style.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sorting Visualizer</title>
+  <link rel="stylesheet" href="stylee.css"> 
 </head>
 <body>
-   <main>
-    <div class="cursor"></div>
-    <div class="stats">
-        <div class="latest-report">
-            <div class="confirmed">
-                <div>
-                   <input type="button" value="New Array" onclick="newArray()">
-                </div>
-            </div>
-<div class="active">
-    <div>
-        <input type="button" value="Sort Array" onclick="sortArray()" >
-    </div>
-</div>
-        </div>
-        <div class="chart">
-            <canvas id="myChart"></canvas>
-        </div>
-    </div>
-   </main>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
-    <script src="script.js"></script>
-  
+ <h1>Sorting Visualizer</h1>
+  <div class="container"></div>
+ 
+  <div id="slider">
+     <input type="range" max="50" min="2" value="20">
+    <button onclick="newarray()">New Array</button>
+    <button onclick="sortarray()">Sort Array</button>
+  </div>
+  <script src="index2.js"></script>
 </body>
 </html>
